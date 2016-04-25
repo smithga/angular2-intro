@@ -1,0 +1,8 @@
+<div>
+    {{pageTitle()}}
+</div>
+<app-foo [pageTitle]="'this is lower'" (fooClicked)="onFooClicked($event)"></app-foo>
+<app-foo [pageTitle]="'THIS IS UPPER'" (fooClicked)="onFooClicked($event)"></app-foo>
+<app-foo [pageTitle]="'abcdefghijiiiii'" (fooClicked)="onFooClicked($event)"></app-foo>
+<app-foo [pageTitle]="'4'" (fooClicked)="onFooClicked($event)"></app-foo>
+<app-foo [pageTitle]="'5'" (fooClicked)="onFooClicked($event)"></app-foo>
